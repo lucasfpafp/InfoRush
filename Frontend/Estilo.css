@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px; 
+}
+
+.container p {
+    text-align: center;
+    padding: 0; 
+    margin-top: 0; 
+    margin-bottom: 5px; 
+    color: #706d6d;
+    font-size: 16px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(117, 117, 117);
+    border-radius: 40px;
+    outline: none;
+    font-size: 14px;
+    color: #706d6d;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color: #706d6d;
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/*
+        margin e padding
+        1 valor -margin 20px - Aplica em todos os lados
+        2 valores -margin: 20px 30px - Em cima e embaixo, dos lados
+        3 valores -padding: 20 px 10px 30px - Em cima, dos lados, embaixo
+        4 valores -margin: 10px 30px 12px 33px - Em cima, direita, embaixo, esquerda
+*/
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    color: #706d6d;
+    font-size: small;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: #706d6d;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(112, 112, 112);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: background-color 0.5s, border 0.5s;
+}
+
+.login:hover {
+    background-color: rgb(0, 0, 255);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.borda-superior {
+    width: 100%;
+    height: 60px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.borda-superior h1 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    z-index: 2;
+}
+
+.barra-pesquisa-centralizada {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    height: 35px;
+    z-index: 1;
+}
+
+.barra-pesquisa-centralizada input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.barra-pesquisa-centralizada i {
+    font-size: 20px;
+    color: gray;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.botoes-topo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+.botao-voltar {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-criar {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+  }
+
+.botao-criar:hover,
+.botao-voltar:hover {
+  background-color: #e0e0e0;
+}
+
+
+.layout-buton {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 80px; 
+    flex-wrap: wrap; 
+}
+
+.login {
+    padding: 10px 20px; 
+    font-size: 20px;
+    border-radius: 10px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.formcadastro {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.formcadastro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-box input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    
+}
+
+.btn {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+#mensagemErro {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
