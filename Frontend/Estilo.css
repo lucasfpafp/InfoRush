@@ -75,13 +75,7 @@ body {
     font-size: 20px;
 }
 
-/*
-        margin e padding
-        1 valor -margin 20px - Aplica em todos os lados
-        2 valores -margin: 20px 30px - Em cima e embaixo, dos lados
-        3 valores -padding: 20 px 10px 30px - Em cima, dos lados, embaixo
-        4 valores -margin: 10px 30px 12px 33px - Em cima, direita, embaixo, esquerda
-*/
+
 .remember-forgot{
     display: flex;
     justify-content: space-between;
